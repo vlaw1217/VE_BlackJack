@@ -1,3 +1,4 @@
+
 /**
  * SYST 17796 Project Summer 2020 Group Project
  * This is the class card to set the total of card and the cards value,
@@ -11,21 +12,23 @@ package ca.sheridancollege.project;
  */
 
 // Create abstract card //
-public abstract class Card {
+//public abstract class Card {
 
     // Create abstract card method //
-    public abstract void cards();
+   // public abstract void cards();
  
     // Create an array for the cardValue which includes total 52 cards //
-    int [] cardValue = new int [52];
+    //int [] cardValue = new int [52];
     
     // Create an array for storing the cards value after randomizing //
-    int [] randomNumArray = new int[14];
+    //int [] randomNumArray = new int[14];
     
-}
+//}
 
 // Create a hierarchy class of the class Card //
-class LoopForValue extends Card {
+//class LoopForValue extends Card {
+class Card extends Game {
+    
 
     // Create a cards method //
     public void cards() {
@@ -61,11 +64,10 @@ class Main {
 
     public static void main(String[] args) {
         
-        // Create an object for the class LoopForValue //
-        LoopForValue a = new LoopForValue();
-        
+        // Create new card //
+        Game a = new Card();
         // Call the method cards //
-        a.cards();
+         a.cards();
 
     }
 
